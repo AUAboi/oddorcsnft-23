@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color:#1a1e20;
+  background-size: cover;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .body {
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .overflow-hidden {
+    overflow: hidden;
+  }
+}
