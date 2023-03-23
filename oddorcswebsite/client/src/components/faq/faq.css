@@ -1,0 +1,161 @@
+.faq-title h2 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  padding: 10px;
+}
+
+.faq-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-image {
+  position: absolute;
+  right: 0;
+  top: 400%;
+  margin: 0;
+  transform: translate(-40%);
+}
+
+.faq-image-2 {
+  position: absolute;
+  width: 380px;
+  left: 0;
+  top: 300%;
+  margin: 0;
+  transform: translate(10%);
+}
+
+.question-answer {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: var(--font-family);
+  position: relative;
+  left: 0;
+}
+
+.question-answer h2 {
+  font-size: 25px;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px;
+  background-color: #a3a089;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  border: 2px solid #0c0c0c;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  position: relative;
+  clear: both;
+  left: 0;
+}
+
+.question-answer h2::before {
+  content: "+";
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.question-answer h2.open::before {
+  content: "\2013";
+}
+
+.question-answer p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 10px;
+  display: none;
+  position: relative;
+  clear: both;
+  left: 0;
+  color: white;
+}
+
+.question-answer p.open {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .faq-image {
+    display: none;
+  }
+
+  .faq-image-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .question-answer h2 {
+    font-size: 10px;
+  }
+  .question-answer h2::before {
+    font-size: 10px;
+  }
+  .question-answer p {
+    font-size: 10px;
+  }
+  .faq-image {
+    display: none;
+  }
+
+  .faq-image-2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .question-answer h2 {
+    font-size: 16px;
+  }
+  .question-answer h2::before {
+    font-size: 16px;
+  }
+  .question-answer p {
+    font-size: 12px;
+  }
+  .faq-image {
+    display: none;
+  }
+
+  .faq-image-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 1900px) {
+  .faq-image {
+    display: none;
+  }
+
+  .faq-image-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .faq-content {
+    margin: 0 2rem;
+  }
+}
+
+
+@media screen and (min-width: 320px) and (max-width:900px) {
+  .faq-title h2 {
+    font-size: 20px;
+  }
+  
+}

@@ -1,0 +1,365 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  background-color: #a3a089;
+  box-shadow: 0 0 10px rgba(241, 225, 225, 0.5);
+}
+.oddlogo {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.oddlogo img {
+  height: 60px;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
+
+
+
+nav a {
+  color: #fff;
+  font-family: var(--font-family);
+  text-decoration: none;
+  font-size: 30px;
+
+
+ 
+}
+
+nav a:hover {
+  color: rgb(8, 8, 8);
+}
+
+.navbar-links {
+  gap: 3.4rem;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-links a {
+  display: inline-block;
+  margin: 5px 100px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .socials img {
+  width: 40px;
+  height: 40px;
+  margin-left: 0.5em;
+  transition: 0.5s;
+}
+.socials img:hover {
+  transform: scale(1.6);
+}
+
+.nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  display: none;
+  opacity: 0;
+}
+
+.social-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.link-container {
+  gap: 5rem;
+  display: flex;
+  margin: 0px 480px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-line {
+  margin: 0.25rem;
+  height: 0.25rem;
+  width: 1.5rem;
+  background-color: white;
+}
+
+@media screen and (max-width: 1400px) {
+  nav {
+    gap: 1rem;
+  }
+  .link-container {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1900px) {
+  nav a {
+    color: #fff;
+    font-family: var(--font-family);
+    text-decoration: none;
+    font-size: 20px;
+    flex-direction: column;
+  }
+  .oddlogo {
+    width: 200px;
+    height: 100px;
+  }
+  nav .socials img {
+    margin-left: 0.5em;
+    transition: 0.5s;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    height: unset;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    font-size: 20px;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .oddlogo {
+    width: 250px;
+    height: 160px;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 0;
+  }
+  nav a {
+    color: #fff;
+    font-family: var(--font-family);
+    text-decoration: none;
+    font-size: 19px;
+    flex-direction: column;
+    margin: 0 10px;
+  }
+  .oddlogo {
+    width: 220px;
+    right: 10%;
+  }
+  nav .socials img {
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+  }
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+ 
+  .social-container {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .link-container {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .oddlogo {
+    width: 220px;
+    height: 100px;
+    animation: none;
+    transform: none;
+  }
+
+  .nav-btn {
+    display: block;
+    opacity: 1;
+    position: absolute;
+    right: 12px;
+    top: 30px;
+    z-index: 120;
+  }
+
+  .nav {
+    flex-direction: column;
+    transform: translate3d(150%, 0, 0);
+    transition: all 0.5s ease-out;
+    justify-content: space-evenly;
+
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color:  #a3a089;
+    z-index: 100;
+  }
+  .social-container {
+    justify-content: center;
+  }
+  .close {
+    width: 100%;
+    position: fixed;
+    z-index: 30;
+  }
+  .open {
+    transform: translateZ(0);
+  }
+
+  .btn-line {
+    margin: 0.25rem;
+    height: 0.25rem;
+    width: 1.5rem;
+    background-color: white;
+  }
+  .link-container {
+    display: flex;
+    flex: 0;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 0;
+  }
+  nav a {
+    color: #fff;
+    font-family: var(--font-family);
+    text-decoration: none;
+    font-size: 19px;
+    flex-direction: column;
+    margin: 0 5px;
+    padding: 20px;
+  }
+  .oddlogo {
+    width: 220px;
+    right: 10%;
+  }
+  nav .socials img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    transition: 0.5s;
+  }
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+  .nav {
+    flex-direction: column;
+  }
+  .social-container {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    font-size: 20px;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .oddlogo {
+    width: 280px;
+    height: 160px;
+  }
+  nav .socials img {
+    margin-left: 0.5em;
+    transition: none;
+    margin-top: 10px;
+  }
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .social-container {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1224px) {
+  nav a {
+    color: #fff;
+    font-family: var(--font-family);
+    text-decoration: none;
+    font-size: 20px;
+    flex-direction: column;
+  }
+  .oddlogo {
+    width: 200px;
+    height: 100px;
+  }
+  nav .socials img {
+    margin-left: 0.5em;
+    transition: 0.5s;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    font-size: 20px;
+    flex-direction: column;
+    padding: 0px;
+  }
+  nav .socials img {
+    width: 25px;
+    height: 25px;
+    
+  }
+}
+
+
