@@ -13,7 +13,7 @@ const Navbar = ({ open, handleOpen }) => {
           <a onClick={handleOpen} href="#team">Team</a>
           <a onClick={handleOpen} href="#clans">Clans</a>
           <a onClick={handleOpen} href="#podcast">Podcast</a>
-        
+         
         <div className="oddlogo">
         <a><img src={NavLogo} alt="nav" ></img></a>
         </div>

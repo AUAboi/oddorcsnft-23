@@ -250,10 +250,11 @@ nav .socials img {
     gap: 20px;
     text-align: center;
     justify-content: center;
+    margin: 150px;
   }
 }
-
 @media only screen and (min-width: 480px) and (max-width: 768px) {
+
   nav {
     flex-direction: column;
     gap: 0;
